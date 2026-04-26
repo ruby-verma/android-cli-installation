@@ -23,17 +23,18 @@ If you see a version number (like ``1.0.0``), you have successfully bypassed the
 Now you can proceed with the Agentic workflow. Navigate to your project folder (e.g., your Android App source code) and run:
 	``android init``
 This command will:
-•	Create a ``.androidrc`` (or similar) configuration.
-•	Prepare your project to be "read" by AI agents.
-•	Install the base ``android-cli`` skill.
+- Create a ``.androidrc`` (or similar) configuration.
+- Prepare your project to be "read" by AI agents.
+- Install the base ``android-cli`` skill.
 
 ### Step 5: Adding Skills (The Agentic "Brain")
 To add specific capabilities like the Room Database logic or UI Migration skills you were looking for:
 ```Bash
 	android skills add –all
 ```
-•  Why use ``--all?`` Since your network is having certificate issues, it's better to pull all standard skills at once rather than one by one later.
-•  Skill.md: After running this, look for new .md files in your project. You can manually append your Room Database schema to these files to "ground" the AI in your specific data structure.
+
+- Why use ``--all?`` Since your network is having certificate issues, it's better to pull all standard skills at once rather than one by one later.
+- ``Skill.md``: After running this, look for new .md files in your project. You can manually append your Room Database schema to these files to "ground" the AI in your specific data structure.
 ***
 Now the Setup is complete, let create new project
 ### 1.	Basic Project Creation
